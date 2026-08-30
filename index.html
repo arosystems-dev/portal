@@ -1,0 +1,230 @@
+<!-- INDEX
+================================= -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/icons/logo.ico">
+  <link rel="stylesheet" href="css/style.css">
+  <title>AroSystems.dev</title>
+</head>
+
+<body id="header">
+
+  <!-- HEADER
+  ------------------------ -->
+  <header>
+    <div class="logo">
+      AroSystems.dev
+    </div>
+    <nav id="navMenu" class="nav">
+      <ul class="ul">
+        <li><a id="enlace1" href="#home">Home</a></li>
+        <li><a id="enlace2" href="#course">Cursos</a></li>
+        <li><a id="enlace2" href="#note">Apuntes</a></li>
+        <li><a id="enlace3" href="#service">Servicios</a></li>
+      </ul>
+    </nav>
+    <button id="navBoton" class="navBoton">
+      <img src="img/menu.svg" alt="">
+    </button>
+  </header>
+
+  <!-- MAIN
+  ------------------------ -->
+  <main>
+
+    <!-- SECCION HOME -->
+    <section id="home">
+      <img class="img-logo" src="img/logo.png" alt="Logo">
+      <div class="presentacion">
+        AroSystems.dev es un espacio tecnológico que impulsa la enseñanza y el desarrollo de software, integrando
+        conocimientos y tecnologías web para resolver problemas reales de manera práctica.
+        <hr>
+        <div class="autor">
+          Marco Aro
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION CURSOS-->
+    <section id="course" class="contenido">
+      <h2>CURSOS</h2>
+      <div class="course">
+
+        <!-- LÓGICA DE PROGRAMACIÓN -->
+        <div class="card">
+          <a id="link-logica-programacion" href="#">
+            <img class="img-course" src="img/logicaProgramacion.png" alt="Foto"><br>
+            <h3>Lógica de Programación</h3>
+            <hr>
+            <p class="descripcion">
+              Curso orientado al desarrollo del razonamiento lógico haciendo uso del
+              lenguaje de programación JavaScript (JS).
+            </p>
+          </a>
+        </div>
+
+        <!-- PÁGINAS WEB -->
+        <div class="card" onclick="abrirModal()">
+          <a href="#" onclick="event.preventDefault();">
+            <img class="img-course" src="img/maquetacionWeb.png" alt="Foto"><br>
+            <h3> Páginas Web</h3>
+            <small style="color: rgb(97, 239, 163);">(En Construcción)</small>
+            <hr>
+            <p class="descripcion">
+              Curso orientado al desarrollo de páginas web estáticas y maquetación responsiva haciendo uso
+              de las tecnologías HTML5 y CSS3.
+            </p>
+          </a>
+        </div>
+
+        <!-- APLICACIONES WEB -->
+        <div class="card" onclick="abrirModal()">
+          <a href="#" onclick="event.preventDefault();">
+            <img class="img-course" src="img/aplicacionWeb.png" alt="Foto"><br>
+            <h3>Aplicaciones Web</h3>
+            <small style="color: rgb(97, 239, 163);">(En Construcción)</small>
+            <hr>
+            <p class="descripcion">
+              Curso orientado al desarrollo de aplicaciones web dinámicas. Se integrará las tecnologías
+              HTML5, CSS3 y JavaScript.
+            </p>
+          </a>
+        </div>
+      </div>
+
+      <div class="course">
+
+        <!-- DESARROLLO WEB -->
+        <div class="card">
+          <a id="link-desarrollo-web" href="#">
+            <img class="img-course" src="img/desarrolloWeb.png" alt="Foto"><br>
+            <h3>Desarrollo Web</h3>
+            <hr>
+            <p class="descripcion">
+              Curso orientado al Desarrollo de Sistemas completos desde el levantamiento de los requerimientos hasta la
+              implementación del mismo considerando Frontend, Backend y Data Base.
+            </p>
+          </a>
+        </div>
+
+        <!-- FISICA -->
+        <div class="card" onclick="abrirModal()">
+          <a href="#" onclick="event.preventDefault();">
+            <img class="img-course" src="img/fisica.png" alt="Foto"><br>
+            <h3>Física Algorítimica</h3>
+            <small style="color: rgb(97, 239, 163);">(En Construcción)</small>
+            <hr>
+            <p class="descripcion">
+              Curso orientado al desarrollo de páginas web estáticas y maquetación responsiva haciendo uso
+              de las tecnologías HTML5 y CSS3.
+            </p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION APUNTES-->
+    <section id="note" class="contenido">
+      <h2>APUNTES</h2>
+      <div class="course">
+
+        <!-- HARDWARE -->
+        <div class="card" onclick="abrirModal()">
+          <a href="#" onclick="event.preventDefault();">
+            <img class="img-course" src="img/hardware.png" alt="Foto"><br>
+            <h3>Hardware</h3>
+            <small style="color: rgb(97, 239, 163);">(En Construcción)</small>
+            <hr>
+            <p class="descripcion">
+              Conceptos teóricos <br> sobre Hardware de Computadores.
+            </p>
+          </a>
+        </div>
+
+        <!-- SOFTWARE -->
+        <div class="card" onclick="abrirModal()">
+          <a href="#" onclick="event.preventDefault();">
+            <img class="img-course" src="img/software.jpg" alt="Foto"><br>
+            <h3>Software</h3>
+            <small style="color: rgb(97, 239, 163);">(En Construcción)</small>
+            <hr>
+            <p class="descripcion">
+              Conceptos teóricos <br> sobre Software de Framework, librerias y utilitarios.
+            </p>
+          </a>
+        </div>
+
+        <!-- REDES -->
+        <div class="card">
+          <a id="link-redes" href="#">
+            <img class="img-course" src="img/redes.jpg" alt="Foto"><br>
+            <h3>Redes</h3>
+            <hr>
+            <p class="descripcion">
+              Conceptos teóricos <br> sobre Redes de Computadores.
+            </p>
+          </a>
+        </div>
+
+        <!-- DATA-BASE -->
+        <div class="card">
+          <a id="link-database" href="#">
+            <img class="img-course" src="img/database.png" alt="Foto"><br>
+            <h3>Database</h3>
+            <hr>
+            <p class="descripcion">
+              Conceptos teóricos <br> sobre Bases de Datos.
+            </p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION SERVICIOS-->
+    <section id="service" class="contenido">
+      <h2>Servicios</h2>
+      <br>
+      ...
+    </section>
+
+    <!-- ATRAS -->
+    <a href="#header">
+      <div class="buttonHome">
+        Home
+      </div>
+    </a>
+  </main>
+
+
+  <!-- FOOTER
+------------------------ -->
+  <footer>
+    <div>
+      <img src="img/icons/facebook.png" alt="facebock" height="50" class="icon" />
+      <img src="img/icons/youtube.png" alt="twiter" height="50" class="icon" />
+      <img src="img/icons/tik-tok.png" alt="TikTok" height="50" class="icon" />
+    </div>
+    <hr>
+    AroSystems.dev &copy; 2026
+  </footer>
+
+  <!-- MODAL CONSTRUCCIÓN -->
+  <div class="modal" id="modal">
+    <div class="modal-contenido">
+      <h3>EN CONTRUCCIÓN</h3>
+      <hr class="hr">
+      <img src="img/construccion.png" alt="" style="width: 100%;">
+      <hr class="hr">
+      <button class="btnCerrar" onclick="cerrarModal()">Cerrar</button>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,329 @@
+/* STYLE INDEX (CSS - PC) 
+============================= */
+
+/* RESETEAR */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+/* VELOCIDAD DE DESPLAZAMIENTO */
+html {
+  scroll-behavior: smooth;
+}
+
+/* VALORES GENERALES */
+body {
+  background-image: url('../img/fondo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+
+  font-family: arial;
+  color: #fff;
+  text-align: center;
+  padding-top: 0px;
+}
+
+/* HEADER
+------------------------ */
+header {
+  background-color: rgb(0, 50, 50, .8);
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+}
+
+header .logo {
+  width: 40%;
+  height: 30px;
+  font-size: 22px;
+  text-align: center;
+}
+
+header nav {
+  width: 30%;
+  height: 20px;
+}
+
+header .ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  transition: all .3s;
+}
+
+a:hover {
+  color: #d8f4f4;
+  font-size: 1.1rem;
+}
+
+.navBoton {
+  display: none;
+}
+
+
+/* MAIN
+------------------------ */
+main {
+  margin: 20px auto;
+}
+
+/* HOME */
+main .img-logo {
+  border: 20px solid rgb(200, 200, 200, .2);
+  border-radius: 50%;
+  margin-top: 130px;
+  width: 20%;
+  height: auto;
+  transition: all .3s;
+}
+
+.img-logo:hover {
+  border: 15px solid rgb(200, 200, 200, .1);
+}
+
+
+main .presentacion {
+  background: rgb(0, 50, 50, .6);
+  border-radius: 10px;
+  width: 50%;
+  height: auto;
+  margin: 20px auto;
+  padding: 30px;
+  font-style: italic;
+}
+
+main .presentacion .autor {
+  margin-top: 30px;
+  text-align: end;
+  font-style: italic;
+}
+
+/* SECTION */
+.contenido {
+  background-color: rgba(50, 50, 50, 0.4);
+  width: 100%;
+  height: auto;
+  margin: 150px auto;
+  padding: 100px 50px;
+  text-align: center;
+}
+
+.course {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card {
+  width: 30%;
+  padding: 20px;
+}
+
+.img-course {
+  border: 20px solid rgb(255, 255, 255, .1);
+  border-radius: 50%;
+  width: 30vh;
+  height: 30vh;
+  margin: 20px 0;
+  transition: all .3s;
+}
+
+.img-course:hover {
+  border: 20px solid rgb(255, 255, 255, .2);
+}
+
+h2 {
+  color: #ffffff;
+  text-align: center;
+  padding: 50px;
+}
+
+.descripcion {
+  color: rgb(243, 243, 228);
+}
+
+/* ATRAS */
+.buttonHome {
+  background-color: rgba(0, 50, 50, 0.6);
+  border: 2px solid rgb(255, 255, 255, .6);
+  border-radius: 20px;
+  width: 90px;
+  height: 45px;
+  padding: 10px;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+}
+
+/* FOOTER
+------------------------ */
+footer {
+  background-color: rgb(0, 0, 0, .5);
+  width: 100%;
+  height: 180px;
+  margin: 0px auto;
+  padding-top: 20px;
+  font-style: italic;
+  font-size: small;
+}
+
+.icon {
+  margin: 20px;
+  border: 5px solid rgb(255, 255, 255, .2);
+  border-radius: 50%;
+}
+
+hr {
+  border: 1px solid rgb(255, 255, 255, .2);
+  margin: 10px;
+}
+
+/* MODAL CONSTRUCCIÓN
+------------------------- */
+
+/* Fondo oscuro */
+.modal {
+  display: none;
+  /* Oculto por defecto */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .2);
+
+  justify-content: center;
+  align-items: center;
+}
+
+/* Caja del modal */
+.modal-contenido {
+  width: 30%;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  color: #008080;
+}
+
+.btnCerrar {
+  border: 1px solid #008080;
+  border-radius: 5px;
+  padding: 10px 30px;
+  cursor: pointer;
+}
+
+.hr {
+  border: 1px solid #008080;
+}
+
+
+
+
+/* STYLE INDEX (CSS - MOVIL)
+=============================== */
+
+@media(max-width:768px) {
+
+  /* HEADER
+------------------------ */
+  header {
+    justify-content: space-around;
+  }
+
+  header .logo {
+    width: 70%;
+    font-size: 20px;
+  }
+
+  header nav {
+    background-color: rgba(17, 85, 85, 0.8);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 100%;
+    top: 90px;
+    transition: .3s;
+  }
+
+  .ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    padding: 20px;
+    line-height: 1.5;
+  }
+
+  .navBoton {
+    display: block;
+    width: 50px;
+    height: 35px;
+    margin-right: 30px;
+  }
+
+  .ocultarNavMenu {
+    left: 0%;
+    transition: .3s;
+  }
+
+  /* MAIN
+------------------------ */
+
+  /* HOME */
+  main .img-logo {
+    width: 50%;
+  }
+
+
+  main .presentacion {
+    width: 90%;
+  }
+
+  /* SECTION */
+  .contenido {
+    border-radius: 20px;
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+    padding: 20px;
+  }
+
+  .course {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 10%;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+
+  }
+
+  .img-course {
+    width: 70%;
+    height: 40vw;
+  }
+
+  /* modal */
+  .modal-contenido {
+    width: 90%;
+  }
+}
