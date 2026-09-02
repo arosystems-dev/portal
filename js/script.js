@@ -52,6 +52,6 @@ enlace3.addEventListener('click', mostrarOcultarNav);
 
 // ROUTES
 document.getElementById('link-logica-programacion').href = rutaRepositorio('aro_course-01_logica-programacion_implementation');
-document.getElementById('link-desarrollo-web').href = rutaRepositorio('aro_course-04_desarrollo-web_implementation');
-document.getElementById('link-redes').href = rutaRepositorio('aro_note-03_redes_implementation');
-document.getElementById('link-database').href = rutaRepositorio('aro_note-04_database_implementation');
+document.getElementById('link-desarrollo-web').href = rutaRepositorio('aro_course-04_desarrollo-web');
+document.getElementById('link-redes').href = rutaRepositorio('aro_note-03_redes');
+
