@@ -38,6 +38,7 @@ header {
   justify-content: space-between;
   align-items: center;
   position: fixed;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 1);
 }
 
 header .logo {
@@ -92,6 +93,7 @@ main .img-logo {
   width: 20%;
   height: auto;
   transition: all .3s;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 1);
 }
 
 .img-logo:hover {
@@ -107,6 +109,7 @@ main .presentacion {
   margin: 20px auto;
   padding: 30px;
   font-style: italic;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 1);
 }
 
 main .presentacion .autor {
@@ -144,6 +147,7 @@ main .presentacion .autor {
   height: 30vh;
   margin: 20px 0;
   transition: all .3s;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 1);
 }
 
 .img-course:hover {
@@ -156,17 +160,12 @@ h2 {
   padding: 50px;
 }
 
-.tituloPrincipal {
-  color: #e9f2e8;
+h3 {
+  font-size: 1.2em;
 }
-
-.titulo {
-  color: #b6e4b1;
-}
-
 
 .descripcion {
-  color: rgb(243, 243, 228);
+  color: #dcdcdc;
 }
 
 .contenido-service {
@@ -181,8 +180,9 @@ h2 {
   display: flex;
   background: rgb(0, 50, 50, .5);
   border-radius: 10px;
-  margin: 20x auto;
+  margin: 40px auto;
   padding: 10px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 1);
 }
 
 .content-service {
@@ -195,11 +195,13 @@ h2 {
   width: 100%;
   margin: 20px;
   transition: all .3s;
+
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 1);
 }
 
 .ref {
   margin-top: 20px;
-  color: #4ee441;
+  color: rgb(97, 239, 163);
   text-align: end;
   font-style: italic;
 }
@@ -261,11 +263,19 @@ hr {
 /* Caja del modal */
 .modal-contenido {
   width: 30%;
-  background: white;
+  background: rgb(0, 50, 50, 0.9);
   padding: 20px;
   border-radius: 10px;
   position: relative;
-  color: #008080;
+  color: #dcdcdc;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 1);
+}
+
+.imgAbout {
+  width: 90%;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 1);
 }
 
 .btnCerrar {
