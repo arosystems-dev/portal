@@ -156,8 +156,52 @@ h2 {
   padding: 50px;
 }
 
+.tituloPrincipal {
+  color: #e9f2e8;
+}
+
+.titulo {
+  color: #b6e4b1;
+}
+
+
 .descripcion {
   color: rgb(243, 243, 228);
+}
+
+.contenido-service {
+  border-radius: 10px;
+  width: 60%;
+  height: auto;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.service {
+  display: flex;
+  background: rgb(0, 50, 50, .5);
+  border-radius: 10px;
+  margin: 20x auto;
+  padding: 10px;
+}
+
+.content-service {
+  text-align: left;
+  padding: 5%;
+}
+
+.img-service {
+  border-radius: 10px;
+  width: 100%;
+  margin: 20px;
+  transition: all .3s;
+}
+
+.ref {
+  margin-top: 20px;
+  color: #4ee441;
+  text-align: end;
+  font-style: italic;
 }
 
 /* ATRAS */
@@ -235,6 +279,12 @@ hr {
   border: 1px solid #008080;
 }
 
+.acceder-curso {
+  background: #4ee441;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 10px;
+}
 
 /* STYLE INDEX (CSS - MOVIL)
 =============================== */
@@ -329,4 +379,18 @@ hr {
   .modal-contenido {
     width: 90%;
   }
+
+  .contenido-service {
+    width: 90%;
+  }
+
+  .service {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img-service {
+    width: 80%;
+  }
+
 }

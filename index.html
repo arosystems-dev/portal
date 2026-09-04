@@ -26,7 +26,7 @@
         <li><a id="enlace2" href="#course">Cursos</a></li>
         <li><a id="enlace3" href="#note">Apuntes</a></li>
         <li><a id="enlace4" href="#service">Servicios</a></li>
-        <li><a id="enlace5" href="#note">Conócenos</a></li>
+        <li onclick="abrirModal('modalAbout')"><a href="#" onclick="event.preventDefault();">Conócenos</a></li>
       </ul>
     </nav>
     <button id="navBoton" class="navBoton">
@@ -53,14 +53,14 @@
 
     <!-- SECCION CURSOS-->
     <section id="course" class="contenido">
-      <h2>CURSOS</h2>
+      <h2 class="titulo-principal">CURSOS</h2>
       <div class="course">
 
         <!-- LÓGICA DE PROGRAMACIÓN -->
         <div class="card">
           <a id="link-logica-programacion" href="#">
             <img class="img-course" src="img/logicaProgramacion.png" alt="Foto"><br>
-            <h3>Lógica de Programación</h3>
+            <h3 class="titulo">Lógica de Programación</h3>
             <hr>
             <p class="descripcion">
               Curso orientado al desarrollo del razonamiento lógico haciendo uso del
@@ -70,10 +70,10 @@
         </div>
 
         <!-- PÁGINAS WEB -->
-        <div class="card" onclick="abrirModal()">
+        <div class="card" onclick="abrirModal('modal')">
           <a href="#" onclick="event.preventDefault();">
             <img class="img-course" src="img/paginaWeb.png" alt="Foto"><br>
-            <h3> Páginas Web</h3>
+            <h3 class="titulo">Páginas Web</h3>
             <small style="color: rgb(97, 239, 163);">(En Construcción)</small>
             <hr>
             <p class="descripcion">
@@ -84,10 +84,10 @@
         </div>
 
         <!-- APLICACIONES WEB -->
-        <div class="card" onclick="abrirModal()">
+        <div class="card" onclick="abrirModal('modal')">
           <a href="#" onclick="event.preventDefault();">
             <img class="img-course" src="img/aplicacionWeb.png" alt="Foto"><br>
-            <h3>Aplicaciones Web</h3>
+            <h3 class="titulo">Aplicaciones Web</h3>
             <small style="color: rgb(97, 239, 163);">(En Construcción)</small>
             <hr>
             <p class="descripcion">
@@ -100,8 +100,8 @@
         <!-- DESARROLLO WEB -->
         <div class="card">
           <a id="link-desarrollo-web" href="#">
-            <img class="img-course" src="img/desarrolloWeb.png" alt="Foto"><br>
-            <h3>Desarrollo Web</h3>
+            <img class="img-course" src="img/desarrollo-web.jpg" alt="Foto"><br>
+            <h3 class="titulo">Desarrollo Web</h3>
             <hr>
             <p class="descripcion">
               Curso orientado al desarrollo de sistemas, desde el levantamiento de requerimientos hasta su
@@ -115,14 +115,14 @@
 
     <!-- SECCION APUNTES-->
     <section id="note" class="contenido">
-      <h2>APUNTES</h2>
+      <h2 class="titulo-principal">APUNTES</h2>
       <div class="course">
 
         <!-- HARDWARE -->
-        <div class="card" onclick="abrirModal()">
+        <div class="card" onclick="abrirModal('modal')">
           <a href="#" onclick="event.preventDefault();">
             <img class="img-course" src="img/hardware.png" alt="Foto"><br>
-            <h3>Hardware</h3>
+            <h3 class="titulo">Hardware</h3>
             <small style="color: rgb(97, 239, 163);">(En Construcción)</small>
             <hr>
             <p class="descripcion">
@@ -132,10 +132,10 @@
         </div>
 
         <!-- SOFTWARE -->
-        <div class="card" onclick="abrirModal()">
+        <div class="card" onclick="abrirModal('modal')">
           <a href="#" onclick="event.preventDefault();">
             <img class="img-course" src="img/software.jpg" alt="Foto"><br>
-            <h3>Software</h3>
+            <h3 class="titulo">Software</h3>
             <small style="color: rgb(97, 239, 163);">(En Construcción)</small>
             <hr>
             <p class="descripcion">
@@ -148,7 +148,7 @@
         <div class="card">
           <a id="link-redes" href="#">
             <img class="img-course" src="img/redes.jpg" alt="Foto"><br>
-            <h3>Redes</h3>
+            <h3 class="titulo">Redes</h3>
             <hr>
             <p class="descripcion">
               Conceptos teóricos <br> sobre Redes de Computadores.
@@ -157,10 +157,10 @@
         </div>
 
         <!-- DATA-BASE -->
-        <div class="card" onclick="abrirModal()">
+        <div class="card" onclick="abrirModal('modal')">
           <a href="#" onclick="event.preventDefault();">
             <img class="img-course" src="img/database.png" alt="Foto"><br>
-            <h3>Database</h3>
+            <h3 class="titulo">Database</h3>
             <small style="color: rgb(97, 239, 163);">(En Construcción)</small>
             <hr>
             <p class="descripcion">
@@ -172,10 +172,70 @@
     </section>
 
     <!-- SECTION SERVICIOS-->
-    <section id="service" class="contenido">
-      <h2>Servicios</h2>
-      <br>
-      ...
+    <section id="service" class="contenido-service">
+      <h2 class="titulo-principal">SERVICIOS</h2>
+      <article class="service">
+        <div>
+          <img src="img/desarrollo-web.jpg" alt="" class="img-service">
+        </div>
+        <div class="content-service">
+          <h3 class="titulo">Desarrollo de Software</h3>
+          <hr>
+          <p>
+            Soluciones de software a medida para empresas, emprendimientos y proyectos, orientadas a optimizar procesos
+            y responder a necesidades específicas.
+          </p>
+        </div>
+      </article>
+      <hr>
+
+      <article class="service">
+        <div>
+          <img src="img/capacitacion.jpg" alt="" class="img-service">
+        </div>
+        <div class="content-service">
+          <h3 class="titulo">Capacitación Personalizada</h3>
+          <hr>
+          <p>
+            Formación personalizada en Programación, Desarrollo Web e Ingeniería de Software, con contenidos adaptados
+            al nivel, objetivos y necesidades de cada estudiante.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <!-- PUBLICACIONES-->
+    <section id="note" class="contenido">
+      <h2 class="titulo-principal">PUBLICACIONES</h2>
+      <div class="course">
+        <article class="service">
+          <div>
+            <img src="img/drive.webp" alt="" class="img-service">
+          </div>
+          <div class="content-service">
+            <h3 class="titulo">Introducción al Desarrollo Web Full Stack</h3>
+            <hr>
+            <p>
+              Curso diseñado para quienes desean iniciarse en el desarrollo de aplicaciones Web Full Stack, abordando
+              desde el análisis y diseño de soluciones hasta la implementación de frontend, backend y bases de datos.
+              Las aplicaciones CRUD desarrolladas en este curso, fuerón actualizadas y liberadas en GitHub. Para ver y
+              revisar el material, ingrese a la sección CURSOS - Desarrollo Web.
+            </p>
+
+            <p class="ref">
+              (Curso dictado en CIPEC durante la gestión 2023)
+            </p>
+
+            <button class="acceder-curso">
+              <a href="https://drive.google.com/drive/folders/13GCGXdIFSxjYxGywRck7GF4xaALIxWS5?usp=sharing"
+                target="_blank">
+                &#9654; Ingresar al Curso
+              </a>
+            </button>
+
+          </div>
+        </article>
+      </div>
     </section>
 
     <!-- ATRAS -->
@@ -186,6 +246,34 @@
     </a>
   </main>
 
+  <!-- MODAL CONSTRUCCIÓN -->
+  <div class="modal" id="modal">
+    <div class="modal-contenido">
+      <h3>EN CONTRUCCIÓN</h3>
+      <hr class="hr">
+      <img src="img/construccion.png" alt="" style="width: 100%;">
+      <hr class="hr">
+      <button class="btnCerrar" onclick="cerrarModal('modal')">Cerrar</button>
+    </div>
+  </div>
+
+  <!-- MODAL CONÓCENOS -->
+  <div class="modal" id="modalAbout">
+    <div class="modal-contenido">
+      <img src="img/about.jpg" alt="" style="width: 100%; border-radius: 5px;">
+      <hr class="hr">
+      <div>
+        <p style="text-align: end;">
+          <strong>Ing. Maro Aro Bustos</strong> <br>
+          <small>
+            arosystems.dev@gmail.com <br>
+            +591 67610910
+          </small>
+        </p>
+      </div>
+      <button class="btnCerrar" onclick="cerrarModal('modalAbout')">Cerrar</button>
+    </div>
+  </div>
 
   <!-- FOOTER
 ------------------------ -->
@@ -198,18 +286,6 @@
     <hr>
     AroSystems.dev &copy; 2026
   </footer>
-
-  <!-- MODAL CONSTRUCCIÓN -->
-  <div class="modal" id="modal">
-    <div class="modal-contenido">
-      <h3>EN CONTRUCCIÓN</h3>
-      <hr class="hr">
-      <img src="img/construccion.png" alt="" style="width: 100%;">
-      <hr class="hr">
-      <button class="btnCerrar" onclick="cerrarModal()">Cerrar</button>
-    </div>
-  </div>
-
   <script src="js/script.js"></script>
 </body>
 

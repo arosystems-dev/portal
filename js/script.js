@@ -12,10 +12,6 @@ var enlace1 = document.getElementById('enlace1');
 var enlace2 = document.getElementById('enlace2');
 var enlace3 = document.getElementById('enlace3');
 var enlace4 = document.getElementById('enlace4');
-var enlace5 = document.getElementById('enlace5');
-// MODAL
-var modal = document.getElementById("modal");
-
 
 /* -----------------------
       FUNCIONES
@@ -25,12 +21,12 @@ function mostrarOcultarNav() {
       navMenu.classList.toggle('ocultarNavMenu');
 }
 
-function abrirModal() {
-      modal.style.display = "flex";
+function abrirModal(idModal) {
+      document.getElementById(idModal).style.display = "flex";
 }
 
-function cerrarModal() {
-      modal.style.display = "none";
+function cerrarModal(idModal) {
+      document.getElementById(idModal).style.display = "none";
 }
 
 // ROUTES LOCAL / PRODUCCIÓN
@@ -51,7 +47,6 @@ enlace1.addEventListener('click', mostrarOcultarNav);
 enlace2.addEventListener('click', mostrarOcultarNav);
 enlace3.addEventListener('click', mostrarOcultarNav);
 enlace4.addEventListener('click', mostrarOcultarNav);
-enlace5.addEventListener('click', mostrarOcultarNav);
 
 // ROUTES
 document.getElementById('link-logica-programacion').href = rutaRepositorio('aro_course-01_logica-programacion_implementation');
