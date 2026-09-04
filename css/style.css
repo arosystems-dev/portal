@@ -263,19 +263,19 @@ hr {
 /* Caja del modal */
 .modal-contenido {
   width: 30%;
-  background: rgb(0, 50, 50, 0.9);
-  padding: 20px;
+  background: #dcdcdc;
+  padding: 30px;
   border-radius: 10px;
   position: relative;
-  color: #dcdcdc;
+  color: #000;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 1);
 }
 
 .imgAbout {
   width: 90%;
-  border-radius: 50%;
-  margin-bottom: 20px;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 1);
+  border-radius: 10px;
+  margin: 10px;
+  /* box-shadow: 0 10px 10px rgba(0, 0, 0, 1); */
 }
 
 .btnCerrar {
