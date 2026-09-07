@@ -379,18 +379,17 @@ hr {
 
   /* SECTION */
   .contenido {
-    border-radius: 20px;
-    width: 90%;
+    width: 100%;
     height: auto;
     margin: 20px auto;
-    padding: 20px;
+    padding: 20px 10px;
   }
 
   .course {
     display: flex;
     flex-direction: column;
     height: auto;
-    padding: 10%;
+    padding: 5px;
   }
 
   .card {
@@ -401,8 +400,8 @@ hr {
   }
 
   .img-course {
-    width: 70%;
-    height: 40vw;
+    width: 60ww;
+    height: 60vw;
   }
 
   /* modal */
