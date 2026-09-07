@@ -192,11 +192,18 @@ h3 {
 
 .img-service {
   border-radius: 10px;
-  width: 100%;
+  width: 200px;
+  height: 200px;
   margin: 20px;
   transition: all .3s;
 
   box-shadow: 0 10px 10px rgba(0, 0, 0, 1);
+}
+
+.lista-temas {
+  margin-left: 20px;
+  padding: 5px;
+  color: #4ee441;
 }
 
 .ref {
@@ -235,6 +242,11 @@ footer {
   margin: 10px;
   border: 5px solid rgb(255, 255, 255, .2);
   border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.icon:hover {
+  zoom: 1.05;
 }
 
 hr {
@@ -294,6 +306,14 @@ hr {
   border-radius: 5px;
   margin-top: 20px;
   padding: 10px;
+  color: #fff;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 1);
+  transition: all 0.2s ease;
+}
+
+.acceder-curso:hover {
+  padding: 12px;
+  border: 2px solid #fff;
 }
 
 /* STYLE INDEX (CSS - MOVIL)
@@ -401,6 +421,7 @@ hr {
 
   .img-service {
     width: 80%;
+    height: auto;
   }
 
 }
