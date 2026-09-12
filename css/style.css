@@ -406,8 +406,8 @@ hr {
 
   /* HOME */
   .logo-efecto {
-    width: 60%;
-    max-width: 350px;
+    width: 60vw;
+    height: 60vw;
   }
 
   .img-logo {
